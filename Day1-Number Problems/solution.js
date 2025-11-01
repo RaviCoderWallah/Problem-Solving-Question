@@ -67,4 +67,80 @@
 
 
 //5: Print factorial of first N numbers ------------
+// let n = 5;
 
+// let factorialNumbers = 1;
+
+// for(let i = 1; i <= n; i++){
+//   factorialNumbers *= i;
+// }
+
+// console.log(factorialNumbers)
+
+
+//6: Sum of All Even Numbers up to N
+// let n = 10;
+
+// let sumOfAllEvenNumbers = 0;
+
+// for(let i = 1; i <= n; i++){
+//    if(i % 2 == 0){
+//     sumOfAllEvenNumbers += i;
+//    }
+// }
+
+// console.log(sumOfAllEvenNumbers);
+
+
+//7: Print Squares of Numbers from 1 to N
+// let n = 5;
+
+// let squareNumbers = [];
+
+// for(let i = 1; i <= n; i++){
+//   squareNumbers.push(i * i);
+// }
+ 
+// console.log(squareNumbers);
+
+
+// Homework practice 
+// 1. Print all numbers divisible by 3 and 5 up to N
+// let n = 30; 
+
+// let numberDivisibleByThreeAndFive = [];
+
+// for(let i = 1; i <= n; i++){
+//     if(i % 3 == 0 && i % 5 == 0){
+//         numberDivisibleByThreeAndFive.push(i);
+//     }
+// }
+
+// console.log(numberDivisibleByThreeAndFive);
+
+// 2. Find the sum of all odd numbers up to N
+
+// let n = 10;
+
+// let sumOfAllOddNumbers = 0;
+
+// for(let i = 1; i <= 10; i++){
+//   if( i % 2 == 1){
+//     sumOfAllOddNumbers += i;
+//   }
+// }
+
+// console.log(sumOfAllOddNumbers);
+
+// 3. Print the cubes of numbers from 1 to N
+// let n = 5;
+
+// let cubeNumbers = [];
+
+// for(let i = 1; i <= n; i++){
+//     cubeNumbers.push(i * i * i);
+// }
+
+// console.log(cubeNumbers);
+
+// Print only the numbers that are both even and perfect squares

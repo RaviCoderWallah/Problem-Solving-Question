@@ -1,11 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Problems</title>
+    <title>Day 1: Numbers Problem (HeyCoderJi)</title>
+    <style>
+        body {
+            font-family: "Fira Code", monospace;
+            background-color: #0d1117;
+            color: #e6edf3;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #58a6ff;
+        }
+
+        .question {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 0 10px rgba(88, 166, 255, 0.1);
+        }
+
+        h2 {
+            color: #79c0ff;
+            font-size: 1.1rem;
+        }
+
+        pre {
+            background: #0d1117;
+            padding: 1rem;
+            overflow-x: auto;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            color: #d2a8ff;
+        }
+
+        code {
+            font-family: "Fira Code", monospace;
+            font-size: 0.95rem;
+            color: #c9d1d9;
+        }
+
+        .comment {
+            color: #8b949e;
+        }
+    </style>
 </head>
+
 <body>
-    <script src="script.js"></script>
+    <h1>🚀 Day 1: Numbers Problems Practice</h1>
+
+    <div class="question">
+        <h2>1️⃣ Print Numbers from 1 to N</h2>
+        <pre><code><span class="comment">// Method 1: While Loop</span>
+let n = 6;
+let result = 0;
+
+while(result < n){
+   result++;
+   console.log(result);
+}
+
+<span class="comment">// Method 2: For Loop</span>
+for(let i = 1; i <= n; i++){
+    console.log(i);
+}</code></pre>
+    </div>
+
+    <div class="question">
+        <h2>2️⃣ Print Numbers from N to 1</h2>
+        <pre><code>let n = 5;
+for(let i = n; i >= 1; i--){
+    console.log(i);
+}</code></pre>
+    </div>
+
+    <div class="question">
+        <h2>3️⃣ Print All Even Numbers from 1 to N</h2>
+        <pre><code>let n = 10;
+let evenNumbers = [];
+
+for(let i = 1; i <= n; i++){
+    if(i % 2 === 0){
+        evenNumbers.push(i);
+    }
+}
+console.log(evenNumbers);
+
+<span class="comment">// Optimized version: Loop runs only n/2 times</span>
+let n2 = 10;
+let evenNumbers2 = [];
+
+for(let i = 1; i <= (n2 / 2); i++){
+    let even = 2 * i;
+    evenNumbers2.push(even);
+}
+console.log(evenNumbers2);</code></pre>
+    </div>
+
+    <div class="question">
+        <h2>4️⃣ Sum of First N Natural Numbers</h2>
+        <pre><code><span class="comment">// Fast Method (Mathematical Formula)</span>
+console.time();
+let n = 100000;
+let sum1 = (n * (n + 1)) / 2;
+console.log(sum1);
+console.timeEnd();
+
+<span class="comment">// Slow Method (Using Loop)</span>
+console.time();
+let n2 = 100000;
+let sum2 = 0;
+
+for(let i = 1; i <= n2; i++){
+    sum2 += i;
+}
+console.log(sum2);
+console.timeEnd();</code></pre>
+    </div>
+
+    <div class="question">
+        <h2>5️⃣ Factorial of N</h2>
+        <pre><code>let n = 5;
+let factorial = 1;
+
+for(let i = 1; i <= n; i++){
+  factorial *= i;
+}
+console.log(factorial);</code></pre>
+    </div>
+
+    <div class="question">
+        <h2>6️⃣ Sum of All Even Numbers up to N</h2>
+        <pre><code>let n = 10;
+let sumEven = 0;
+
+for(let i = 1; i <= n; i++){
+   if(i % 2 === 0){
+     sumEven += i;
+   }
+}
+console.log(sumEven);</code></pre>
+    </div>
+
+    <div class="question">
+        <h2>7️⃣ Print Squares of Numbers from 1 to N</h2>
+        <pre><code>let n = 5;
+let squares = [];
+
+for(let i = 1; i <= n; i++){
+  squares.push(i * i);
+}
+console.log(squares);</code></pre>
+    </div>
+
+    <div class="question">
+        <h2>🧠 Homework Practice</h2>
+        <pre><code><span class="comment">// 1. Print all numbers divisible by 3 and 5 up to N</span>
+let n = 30;
+let divisible = [];
+
+for(let i = 1; i <= n; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        divisible.push(i);
+    }
+}
+console.log(divisible);
+
+<span class="comment">// 2. Find the sum of all odd numbers up to N</span>
+let n2 = 10;
+let sumOdd = 0;
+
+for(let i = 1; i <= n2; i++){
+  if(i % 2 === 1){
+    sumOdd += i;
+  }
+}
+console.log(sumOdd);
+
+<span class="comment">// 3. Print the cubes of numbers from 1 to N</span>
+let n3 = 5;
+let cubes = [];
+
+for(let i = 1; i <= n3; i++){
+    cubes.push(i * i * i);
+}
+console.log(cubes);
+
+<span class="comment">// 4. Print only the numbers that are both even and perfect squares</span>
+let n4 = 100;
+let evenPerfectSquares = [];
+
+for(let i = 1; i * i <= n4; i++){
+  let square = i * i;
+  if(square % 2 === 0){
+    evenPerfectSquares.push(square);
+  }
+}
+console.log(evenPerfectSquares);</code></pre>
+    </div>
+
 </body>
+
 </html>
