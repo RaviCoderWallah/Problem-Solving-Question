@@ -108,3 +108,38 @@ if (charCode >= 32 && charCode <= 47 || charCode >= 58 && charCode <= 64 || char
 }
 
 //2. Check Triangle Type Using Sides and Angles
+function typeOFTriangle(a, b, c) {
+
+  if (a > b && a > c) {
+
+    if ((a * a) == (b * b) + (c * c)) {
+      return "Right Angle Trianlge"
+    }
+
+  }
+
+  if (b > a && b > c) {
+    if ((b * b) == (a * a) + (c * c)) {
+      return "Right Angle Triangle";
+    }
+  }
+
+  if (c > a && c > b) {
+    if ((c * c) == (a * a) + (b * b)) {
+      return "Right Angle Triangle";
+    }
+  }
+
+  if (a == b || b == c || c == a) {
+    return "Isosceles Triangle";
+  } else if (a == b == c) {
+    return " Equilateral";
+  } else {
+    return "Scalene";
+  }
+
+
+
+}
+
+console.log(typeOFTriangle(4, 5, 3));
