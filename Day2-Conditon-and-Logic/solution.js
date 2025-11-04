@@ -1,34 +1,34 @@
 // 1. Find the Maximum of Three Numbers
 
-// let maximumNum;
+let maximumNum;
 
-// const largerNum = (n1, n2, n3) => {
-//    if(n1 >= n2 && n1 >= n3){
-//     maximumNum = n1;
-//    }else if(n2 >= n3 && n2 >= n1){
-//     maximumNum = n2;
-//    }else{
-//     maximumNum = n3;
-//    }
-// }
+const largerNum = (n1, n2, n3) => {
+   if(n1 >= n2 && n1 >= n3){
+    maximumNum = n1;
+   }else if(n2 >= n3 && n2 >= n1){
+    maximumNum = n2;
+   }else{
+    maximumNum = n3;
+   }
+}
 
-// largerNum(6, 7, 7);
+largerNum(6, 7, 7);
 
-// console.log(maximumNum);
+console.log(maximumNum);
 
 
 
 // 2. Check if a Number is Positive, Negative, or Zero
 
-// let num = 0;
+let num = 0;
 
-// if(num > 0){
-//     console.log("Positive " + num)
-// }else if(num < 0){
-//     console.log("Negative " + num)
-// }else{
-//     console.log("Zero " + num);
-// }
+if(num > 0){
+    console.log("Positive " + num)
+}else if(num < 0){
+    console.log("Negative " + num)
+}else{
+    console.log("Zero " + num);
+}
 
 
 // 3. 

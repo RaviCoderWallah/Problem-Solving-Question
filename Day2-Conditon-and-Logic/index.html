@@ -130,7 +130,7 @@ const calculateElectricBill = (units) => {
        return  bill = (100 * 5) + (100 * 7) + (100 - finalPositon) * 10;
     }
 
-    if (units <= 200) { //units = 130
+    if (units <= 200) { 
         let finalPositon = 200 - units; //200 - 130 = 70
       return  bill = (100 * 5) + (100 - finalPositon) * 7;
     }
@@ -139,7 +139,7 @@ const calculateElectricBill = (units) => {
       return  bill = units * 5
     }
 
-    if(units > 300){ //units = 500;
+    if(units > 300){ 
        return bill = (100 * 5) + (100 * 7) + (100 * 10) + (units - 300) * 12;
     }
 }
@@ -247,5 +247,6 @@ console.log(typeOFTriangle(4, 5, 3));
     ✨ Created by Ravi Verma | JavaScript Practice Collection
   </footer>
 
+  <script src="./script.js"></script>
 </body>
 </html>
