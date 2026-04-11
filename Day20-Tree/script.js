@@ -91,8 +91,24 @@ function allTagName(node, depth = 0) {
 function totalNumberOfElements(node) {
     let count = 1;
     for (const children of node.children) {
-       count += totalNumberOfElements(children);
+        count += totalNumberOfElements(children);
     }
     return count;
+}
+
+//Homework Question 
+// 1.Check If a Folder or File Exists in the Tree
+function isNodeExists(node, target) {
+    if (node.name === target) {
+        return true;
+    }
+    if (node.children) {
+        for (const child of node.children) {
+            const found = isNodeExists(child, target);
+            if (found) return true;
+        }
+    }
+
+    return false;
 }
 
